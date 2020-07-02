@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+$font-pt-serif: "PT Serif", sans-serif;
+$font-noto-sans: "Noto Sans KR", sans-serif;
+$font-pangolin: "Pangolin", sans-serif;
+$font-museo-moderno: "Museo Moderno", sans-serif;
+$font-notable: "Notable", sans-serif;
+$customShadow: 0px 0px 20px -6px rgba(66,63,66,0.81);
+$customShadowTwo:  0px 0px 20px -9px rgba(66,63,66,0.81);
+$customShadowThree: 0px 0px 15px -9px rgba(66,63,66,0.81);
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 40px;
+    padding: 20px;
+    h1 {
+        font-size: 3rem;
+        font-family: $font-pt-serif;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    .offset-info {
+        background: #FFF;
+        border: 2px solid #000;
+        position: fixed;
+        display: flex;
+        top: 10px;
+        left: 20px;
+        padding: 0 10px 0 10px;
+        border-radius: 5px;
+        font-family: $font-pangolin;
+        p {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 0.9rem;
+        }
+    }
+    .arrow-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10%;
+        right: 5%;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: hsl(0, 0%, 25%);
+        visibility: hidden;
+        box-shadow: $customShadow;
+        i {
+            color: #fff;
+            font-size: 1.8rem;
+        }
+    }
+    .arrow-circle:hover {
+        background: hsl(0, 0%, 20%);
+        cursor: pointer;
+    }
+    .test {
+        width: 100vw;
+        height: 600px;
+    }
+    .images {
+        margin: 10px;
+        border-radius: 5px;
+        width: 500px;
+        height: 500px;
+
+    }
+    .filler-lorem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p {
+            font-size: 1.3rem;
+            line-height: 1.5;
+        }
+        h2 {
+            font-family: $font-pt-serif;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .offset-info {
+        background: #FFF;
+        p {
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 0.8rem !important;
+        }
+    }
+}

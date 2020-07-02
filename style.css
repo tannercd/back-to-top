@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 40px;
+  padding: 20px;
+}
+.container h1 {
+  font-size: 3rem;
+  font-family: "PT Serif", sans-serif;
+}
+.container p {
+  font-size: 1.3rem;
+}
+.container .offset-info {
+  background: #FFF;
+  border: 2px solid #000;
+  position: fixed;
+  display: flex;
+  top: 10px;
+  left: 20px;
+  padding: 0 10px 0 10px;
+  border-radius: 5px;
+  font-family: "Pangolin", sans-serif;
+}
+.container .offset-info p {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 0.9rem;
+}
+.container .arrow-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #404040;
+  visibility: hidden;
+  box-shadow: 0px 0px 20px -6px rgba(66, 63, 66, 0.81);
+}
+.container .arrow-circle i {
+  color: #fff;
+  font-size: 1.8rem;
+}
+.container .arrow-circle:hover {
+  background: #333333;
+  cursor: pointer;
+}
+.container .test {
+  width: 100vw;
+  height: 600px;
+}
+.container .images {
+  margin: 10px;
+  border-radius: 5px;
+  width: 500px;
+  height: 500px;
+}
+.container .filler-lorem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .filler-lorem p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.container .filler-lorem h2 {
+  font-family: "PT Serif", sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+  .offset-info {
+    background: #FFF;
+  }
+  .offset-info p {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.8rem !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
